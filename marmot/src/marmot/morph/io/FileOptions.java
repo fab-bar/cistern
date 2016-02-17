@@ -11,11 +11,14 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.zip.GZIPInputStream;
 
+import marmot.util.LineIterator;
+
 public class FileOptions {
 	public static final String FORM_INDEX = "form-index";
 	public static final String LEMMA_INDEX = "lemma-index";
 	public static final String TAG_INDEX = "tag-index";
 	public static final String MORPH_INDEX = "morph-index";
+	public static final String FIELD_SEPERATOR = "separator";
 	public static final String LIMIT = "limit";
 	public static final String FST_MORPH_INDEX = "token-feature-index";
 
@@ -23,6 +26,7 @@ public class FileOptions {
 	private int lemma_index_;
 	private int tag_index_;
 	private int morph_index_;
+	private String sep_;
 	private List<Integer> token_feature_index_;
 	private String filename_;
 	private int limit_;
@@ -36,6 +40,7 @@ public class FileOptions {
 		lemma_index_ = -1;
 		tag_index_ = -1;
 		morph_index_ = -1;
+		sep_ = LineIterator.getDefaultSeperator();
 		limit_ = -1;
 		token_feature_index_ = new LinkedList<Integer>();
 		filename_ = null;
@@ -88,7 +93,8 @@ public class FileOptions {
 										+ option_string);
 					}
 					morph_index_ = Integer.parseInt(value);
-
+				} else if (option.equalsIgnoreCase(FIELD_SEPERATOR)) {
+					sep_ = value;
 				} else if (option.equalsIgnoreCase(FST_MORPH_INDEX)) {
 					token_feature_index_.add(Integer.parseInt(value));
 				} else if (option.equalsIgnoreCase(LIMIT)) {
@@ -129,6 +135,10 @@ public class FileOptions {
 
 	public int getMorphIndex() {
 		return morph_index_;
+	}
+
+	public String getSeperator() {
+		return sep_;
 	}
 
 	public void setTagIndex(int index) {
@@ -194,4 +204,4 @@ public class FileOptions {
 	}
 
 }
- 
+

@@ -81,4 +81,8 @@ public class LineIterator implements Iterator<List<String>> {
         throw new UnsupportedOperationException();
     }
 
+    public static String getDefaultSeperator() {
+        return DefaultSeperator_;
+    }
+
 }

@@ -32,7 +32,7 @@ public class SentenceReader implements Iterable<Sequence> {
 
 			int number_ = 0;
 			LineIterator line_iterator_ = new LineIterator(
-					options_.getInputStream());
+					options_.getInputStream(), options_.getSeperator());
 
 			@Override
 			public Sequence next() {
