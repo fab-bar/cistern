@@ -14,3 +14,6 @@ This version of MarMoT contains the following additions and changes by Fabian Ba
   The results are written to output.tsv using the
   [CoNLL09](http://ufal.mff.cuni.cz/conll2009-st/task-description.html) format
   (only the first 8 columns), the predicted lemmas are in the 4th column).
+
+- word form and lemma are not lowercased by Lemming; if you want to use
+  lowercased word forms and/or lemmas, you have to preprocess the input data

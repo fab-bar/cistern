@@ -181,11 +181,8 @@ public class LemmaInstance {
 		if (form == null) {
 			throw new RuntimeException("Form is null. Did you specify a form-index?");
 		}
-		form = form.toLowerCase();
 		
 		String lemma = word.getLemma();
-		if (lemma != null)
-			lemma = lemma.toLowerCase();
 
 		return  new LemmaInstance(form, lemma, (use_postag)? word.getPosTag() : null, (use_mtag) ? word.getMorphTag() : null);	
 	}
