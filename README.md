@@ -1,7 +1,6 @@
-This is the code repository of [NLP](https://en.wikipedia.org/wiki/Natural_language_processing) tools such as
+This fork of the code repository
+[muelletm/cistern](https://github.com/muelletm/cistern) contains additions to
+the lemmatizer [Lemming](http://cistern.cis.lmu.de/lemming/).
 
-* [MarMoT](http://cistern.cis.lmu.de/marmot/) - A morphological tagger
-* [MarLiN](http://cistern.cis.lmu.de/marlin/) - A fast word clustering tool
-* [ChipMunk](http://cistern.cis.lmu.de/chipmunk/) - A morphological segmenter and stemmer
-
-For other tools developed by the Center for Information and Language Processing [(CIS)](http://www.cis.lmu.de), please have a look at [CISTERN](http://cistern.cis.lmu.de/).
+The source code of Lemming is part of [MarMoT](marmot).
+See its [README](marmot/README) for further details.
