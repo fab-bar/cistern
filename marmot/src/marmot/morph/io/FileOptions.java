@@ -1,3 +1,6 @@
+// Modified by Fabian Barteld, Feb 2016
+// - Added option "separator"
+
 // Copyright 2013 Thomas Müller
 // This file is part of MarMoT, which is licensed under GPLv3.
 

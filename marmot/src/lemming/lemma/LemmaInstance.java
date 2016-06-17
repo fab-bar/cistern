@@ -1,3 +1,6 @@
+// Modified by Fabian Barteld, Feb 2016
+// - Removed lowercasing of form and lemma
+
 // Copyright 2015 Thomas Müller
 // This file is part of MarMoT, which is licensed under GPLv3.
 

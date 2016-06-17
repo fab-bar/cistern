@@ -1,4 +1,5 @@
-This version of MarMoT contains the following additions and changes by Fabian Barteld:
+This version of MarMoT contains the following additions and changes by Fabian
+Barteld (2015,2016):
 
 - a command _Annotator_ for Lemming to run a pipeline model independently of
   MarMoT  

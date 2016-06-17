@@ -1,3 +1,6 @@
+// Created by Fabian Barteld, Nov 2015
+// This file is a copy of Tester.java without the call to Trainer.test
+
 // Copyright 2015 Thomas Müller
 // This file is part of MarMoT, which is licensed under GPLv3.
 
